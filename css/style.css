@@ -11,12 +11,11 @@
 
 body {
   font-family: var(--main-font-family);
-  color: #434455;
-  background-color: #ffffff;
+  color: var(--secondary-color-dark-theme);
+  background-color: var(--secondary-color-light-theme);
 }
 
 button {
-  font-family: inherit;
   cursor: pointer;
 }
 
@@ -28,13 +27,18 @@ button {
   text-decoration: none;
 }
 
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: ;
+  padding-right: ;
+}
+
 /*=== COMPONENTS ===*/
 .modal-opn-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
   color: var(--secondary-color-light-theme);
   background-color: var(--primary-brand-color);
@@ -49,7 +53,6 @@ button {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--primary-color-dark-theme);
@@ -67,14 +70,18 @@ button {
 }
 
 .second-part-logo-dark-theme {
-  color: #f4f4fd;
+  color: var(--primary-color-light-theme);
 }
 
 .second-part-logo-light-theme {
-  color: #2e2f42;
+  color: var(--primary-color-dark-theme);
 }
 
 /*==================================== HEADER ====================================*/
+.page-header {
+  display: flex;
+}
+
 .main-menu-link {
   font-weight: 500;
   font-size: 16px;
@@ -115,7 +122,6 @@ button {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--secondary-color-light-theme);
 }
@@ -167,7 +173,6 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
   letter-spacing: 0.04em;
   color: var(--primary-brand-color);
   background-color: var(--primary-color-light-theme);
