@@ -104,6 +104,11 @@ img {
 .second-part-logo-light-theme {
   color: var(--primary-color-dark-theme);
 }
+
+.card-text {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 /*====================================  /COMPONENTS ==================================== */
 
 /*==================================== HEADER ====================================*/
@@ -179,11 +184,11 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 48px;
 }
 
 .main-title {
   max-width: 511px;
-  padding-bottom: 48px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -201,7 +206,6 @@ img {
 
 .features-list {
   display: flex;
-  align-items: center;
   column-gap: 24px;
 }
 
@@ -264,18 +268,13 @@ img {
   background-color: var(--secondary-color-light-theme);
 }
 
-.employees-list-text {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .employees-list-name {
   padding-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
   text-align: center;
+  letter-spacing: 0.02em;
   color: var(--primary-color-dark-theme);
 }
 
@@ -283,16 +282,23 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
   text-align: center;
+  letter-spacing: 0.02em;
 }
 /*========== /TEAM MEMBERS ==========*/
 /*==================================== /STUDIO ====================================*/
 
 /*==================================== PORTFOLIO ====================================*/
 .portfolio {
-  padding-top: 168px;
+  padding-top: 96px;
   padding-bottom: 120px;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 72px;
 }
 
 .filters-list {
@@ -326,9 +332,21 @@ img {
   display: flex;
   align-items: center;
   column-gap: 24px;
+  row-gap: 48px;
+  flex-wrap: wrap;
+}
+
+.portfolio-list-item {
+  border: 1px solid #e7e9fc;
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+.portfolio-list-text {
+  padding-left: 16px;
 }
 
 .portfolio-list-name {
+  padding-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
