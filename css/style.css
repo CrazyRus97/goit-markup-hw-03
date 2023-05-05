@@ -104,11 +104,6 @@ img {
 .second-part-logo-light-theme {
   color: var(--primary-color-dark-theme);
 }
-
-.card-text {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
 /*====================================  /COMPONENTS ==================================== */
 
 /*==================================== HEADER ====================================*/
@@ -117,6 +112,7 @@ img {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .page-header-container {
@@ -206,7 +202,7 @@ img {
 
 .features-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .features-list-item {
@@ -239,7 +235,7 @@ img {
 .gallery {
   display: flex;
   align-items: center;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .gallery-item {
@@ -257,7 +253,7 @@ img {
 .employees-list {
   display: flex;
   align-items: center;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .employees-list-item {
@@ -266,6 +262,11 @@ img {
     0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--secondary-color-light-theme);
+}
+
+.employees-list-text {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .employees-list-name {
