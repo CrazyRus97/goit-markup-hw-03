@@ -187,10 +187,10 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 48px;
 }
 
 .main-title {
+  margin-bottom: 48px;
   max-width: 496px;
   font-weight: 700;
   font-size: 56px;
